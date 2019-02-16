@@ -1,0 +1,3 @@
+djangorestframework==3.9.1
+django
+paho.mqtt
