@@ -1,5 +1,5 @@
 # PythonAnywhere
-Repositório temporário para subir arquivos para a PythonAnywhere utilizando apenas dois comandos.
+Repositório utilizado para subir arquivos para a PythonAnywhere utilizando apenas dois comandos.
 
 
 <code>pip3.6 install --user pythonanywhere</code>
