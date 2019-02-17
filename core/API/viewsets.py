@@ -12,6 +12,16 @@ class PessoaViewSet(ModelViewSet):
     serializer_class = PessoaSerializer
     http_method_names = ['get', 'post']
 
+    def create(self, request, *args, **kwargs):
+       try:
+        aux = pessoa()
+        aux.nome = "Cadastrado pela tranca"
+        aux.key = request.data['key']
+        aux.save()
+        return  Response({'status' : 'sucesso'})
+       except:
+        return Response({'status': 'falha'})
+
 
 
 class LogsViewSet(ModelViewSet):

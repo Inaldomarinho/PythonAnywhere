@@ -5,7 +5,7 @@ from django.utils import timezone
 class pessoa(models.Model):
     nome = models.CharField(max_length=150)
     key = models.CharField(max_length=14, unique=True)
-    ativado = models.BooleanField(default=True)
+    ativado = models.BooleanField(default=False)
     segunda = models.BooleanField(default=True)
     terca = models.BooleanField(default=True)
     quarta = models.BooleanField(default=True)
